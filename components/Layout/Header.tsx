@@ -13,13 +13,13 @@ const Header: FC = () => (
         <Link href="/" passHref>
           <Nav.Link>Home</Nav.Link>
         </Link>
-        <Link href="/basic" passHref>
+        <Link href="/courses/basic" passHref>
           <Nav.Link>WWW基礎</Nav.Link>
         </Link>
-        <Link href="/advanced" passHref>
+        <Link href="/courses/advanced" passHref>
           <Nav.Link>WWW発展</Nav.Link>
         </Link>
-        <Link href="/security" passHref>
+        <Link href="/courses/security" passHref>
           <Nav.Link>Webセキュリティ</Nav.Link>
         </Link>
       </Nav>

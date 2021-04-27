@@ -1,5 +1,4 @@
 import React, { FC, ReactNode } from 'react'
-import { propTypes } from 'react-bootstrap/esm/Image'
 
 interface HeadlineProps {
   children: ReactNode

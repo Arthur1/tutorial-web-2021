@@ -4,6 +4,15 @@ import { Container } from 'react-bootstrap'
 import { Headline1, Headline2 } from '../../components/snippets'
 import LessonBox from '../../components/courses/LessonBox'
 
+interface LessonMaterialLinkProps {
+  fileName: string
+}
+
+const LessonSlideLink: FC<LessonMaterialLinkProps> = (props: LessonMaterialLinkProps) => {
+  const { fileName } = props
+  return <a href={`./slides/${fileName}`} target="_blank" rel="noreferrer"> {fileName}</a>
+}
+
 const index: FC = () => (
   <Container className="mt-4">
     <Head>
@@ -17,8 +26,9 @@ const index: FC = () => (
     <Headline2>講習会</Headline2>
     <LessonBox id={1} title="WWW">
       <ul>
-        <li>slide0.pdf</li>
-        <li>slide1.pdf</li>
+        <li>YouTube Live 2021/05/08(土) 14:00-15:30</li>
+        <li><LessonSlideLink fileName="slide0.pdf" /></li>
+        <li><LessonSlideLink fileName="slide1.pdf" /></li>
       </ul>
     </LessonBox>
     <Headline2>シラバス</Headline2>

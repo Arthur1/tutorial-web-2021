@@ -8,7 +8,6 @@ const index: FC = () => (
   <Container className="mt-4">
     <Head>
       <title>Webセキュリティ攻撃・防御 | Web講習会2021</title>
-      <link rel="icon" href="/favicon.ico" />
     </Head>
     <Headline1>Webセキュリティ攻撃・防御</Headline1>
     <Headline2>お知らせ</Headline2>

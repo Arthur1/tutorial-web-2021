@@ -11,6 +11,14 @@ const Footer: FC = () => (
     <div className="text-center">
       <small>本サイトのコンテンツを無断で転載することはご遠慮ください。</small>
     </div>
+    <div className="text-center">
+      <small>
+        GitHub Repository:{' '}
+        <ExternalLink href="https://github.com/Arthur1/tutorial-web-2021">
+          Arthur1/tutorial-web-2021
+        </ExternalLink>
+      </small>
+    </div>
   </div>
 )
 

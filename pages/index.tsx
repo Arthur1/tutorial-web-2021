@@ -3,7 +3,7 @@ import Head from 'next/head'
 import { Container } from 'react-bootstrap'
 import { Headline1 } from '../components/snippets'
 
-const index : FC = () => (
+const index: FC = () => (
   <Container className="mt-4">
     <Head>
       <title>Web講習会2021</title>

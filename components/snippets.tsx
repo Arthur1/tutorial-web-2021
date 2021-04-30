@@ -4,12 +4,12 @@ interface HeadlineProps {
   children: ReactNode
 }
 
-const Headline1: FC = (props: HeadlineProps) => {
+const Headline1: FC<HeadlineProps> = props => {
   const { children } = props
   return <h1 className="text-primary mt-4">{children}</h1>
 }
 
-const Headline2: FC = (props: HeadlineProps) => {
+const Headline2: FC<HeadlineProps> = props => {
   const { children } = props
   return <h2 className="text-secondary mt-4">{children}</h2>
 }
@@ -19,7 +19,7 @@ interface ExternalLinkProps {
   href: string
 }
 
-const ExternalLink: FC<ExternalLinkProps> = (props: ExternalLinkProps) => {
+const ExternalLink: FC<ExternalLinkProps> = props => {
   const { children, href } = props
   return (
     <a href={href} target="_blank" rel="noreferrer">

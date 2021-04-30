@@ -6,7 +6,7 @@ interface LayoutProps {
   children: ReactNode
 }
 
-const Layout: FC<LayoutProps> = (props: LayoutProps) => {
+const Layout: FC<LayoutProps> = props => {
   const { children } = props
   return (
     <div className="d-flex flex-column vh-100">

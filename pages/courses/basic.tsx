@@ -1,22 +1,12 @@
 import React, { FC } from 'react'
 import Head from 'next/head'
 import { Container } from 'react-bootstrap'
-import { ExternalLink, Headline1, Headline2 } from '../../components/snippets'
+import { Headline1, Headline2 } from '../../components/snippets'
 import LessonBox from '../../components/courses/LessonBox'
-
-interface LessonMaterialLinkProps {
-  fileName: string
-}
-
-const LessonSlideLink: FC<LessonMaterialLinkProps> = (props: LessonMaterialLinkProps) => {
-  const { fileName } = props
-  return (
-    <a href={`./slides/${fileName}`} target="_blank" rel="noreferrer">
-      {' '}
-      {fileName}
-    </a>
-  )
-}
+import LessonMaterialList, {
+  LessonMovie,
+  LessonSlide,
+} from '../../components/courses/LessonMaterialList'
 
 const index: FC = () => (
   <Container className="mt-4">
@@ -30,19 +20,13 @@ const index: FC = () => (
     </ul>
     <Headline2>講習会</Headline2>
     <LessonBox id={1} title="WWW">
-      <ul>
-        <li>
-          <ExternalLink href="https://youtu.be/x-g2Q940Wvs">
-            YouTube Live 2021/05/08(土) 14:00-15:30
-          </ExternalLink>
-        </li>
-        <li>
-          <LessonSlideLink fileName="slide0.pdf" />
-        </li>
-        <li>
-          <LessonSlideLink fileName="slide1.pdf" />
-        </li>
-      </ul>
+      <LessonMaterialList>
+        <LessonMovie href="https://youtu.be/x-g2Q940Wvs">
+          YouTube Live 2021/05/08(土) 14:00-15:30
+        </LessonMovie>
+        <LessonSlide fileName="slide0.pdf">slide0.pdf</LessonSlide>
+        <LessonSlide fileName="slide1.pdf">slide1.pdf</LessonSlide>
+      </LessonMaterialList>
     </LessonBox>
     <Headline2>シラバス</Headline2>
     <ol>

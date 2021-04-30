@@ -2,7 +2,7 @@ import React, { FC } from 'react'
 import { ExternalLink } from '../snippets'
 
 const Footer: FC = () => (
-  <div className="bg-light py-3">
+  <div className="bg-light py-3 mt-5">
     <div className="text-center">
       <small>
         &copy; 2021 <ExternalLink href="https://arthur1.github.io/">Arthur</ExternalLink>

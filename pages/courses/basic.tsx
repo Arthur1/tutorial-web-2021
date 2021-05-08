@@ -6,6 +6,7 @@ import LessonBox from '../../components/courses/LessonBox'
 import LessonMaterialList, {
   LessonMovie,
   LessonSlide,
+  LessonFile,
 } from '../../components/courses/LessonMaterialList'
 
 const index: FC = () => (
@@ -16,9 +17,18 @@ const index: FC = () => (
     <Headline1>ワールドワイドウェブ基礎</Headline1>
     <Headline2>お知らせ</Headline2>
     <ul>
-      <li>Webサイトを公開しました</li>
+      <li>第2回の資料を掲載しました</li>
     </ul>
     <Headline2>講習会</Headline2>
+    <LessonBox id={2} title="HTML">
+      <LessonMaterialList>
+        <LessonMovie href="https://youtu.be/eZ6ZRy67KHY">
+          YouTube Live 2021/05/15(土) 14:00-15:30
+        </LessonMovie>
+        <LessonSlide fileName="slide2.pdf">slide2.pdf</LessonSlide>
+        <LessonFile fileName="code2.zip">code2.zip</LessonFile>
+      </LessonMaterialList>
+    </LessonBox>
     <LessonBox id={1} title="WWW">
       <LessonMaterialList>
         <LessonMovie href="https://youtu.be/x-g2Q940Wvs">

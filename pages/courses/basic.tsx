@@ -26,6 +26,7 @@ const index: FC = () => (
           YouTube Live 2021/06/12(土) 14:00-15:30
         </LessonMovie>
         <LessonSlide fileName="slide4.pdf">slide4.pdf</LessonSlide>
+        <LessonFile fileName="code4.zip">code4.zip</LessonFile>
       </LessonMaterialList>
     </LessonBox>
     <LessonBox id={3} title="CSS(1)">

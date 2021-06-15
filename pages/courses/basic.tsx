@@ -17,10 +17,19 @@ const index: FC = () => (
     <Headline1>ワールドワイドウェブ基礎</Headline1>
     <Headline2>お知らせ</Headline2>
     <ul>
+      <li>第5回の資料を掲載しました</li>
       <li>第4回の動画を事前収録して公開しました</li>
-      <li>第4回の資料を掲載しました</li>
     </ul>
     <Headline2>講習会</Headline2>
+    <LessonBox id={5} title="HTMLとCSS・HTTPS">
+      <LessonMaterialList>
+        <LessonMovie href="https://youtu.be/U_aU6YB7-YA">
+          YouTube Live 2021/06/19(土) 14:00-15:30
+        </LessonMovie>
+        <LessonSlide fileName="slide5-1.pdf">slide5-1.pdf</LessonSlide>
+        <LessonSlide fileName="slide5-2.pdf">slide5-2.pdf</LessonSlide>
+      </LessonMaterialList>
+    </LessonBox>
     <LessonBox id={4} title="CSS(2)">
       <LessonMaterialList>
         <LessonMovie href="https://youtu.be/lyzA5-Yov5w">

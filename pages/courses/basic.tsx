@@ -20,7 +20,7 @@ const index: FC = () => (
       <li>第7回の資料を掲載しました</li>
     </ul>
     <Headline2>講習会</Headline2>
-    <LessonBox id={7} title="Wevサイトの公開">
+    <LessonBox id={7} title="Webサイトの公開">
       <LessonMaterialList>
         <LessonMovie href="https://youtu.be/BTimG1GLeJc">
           YouTube Live 2021/07/10(土) 14:00-15:30

@@ -2,7 +2,12 @@ import React, { FC } from 'react'
 import Head from 'next/head'
 import { Container } from 'react-bootstrap'
 import { Headline1, Headline2 } from '../../components/snippets'
-// import LessonBox from '../../components/courses/LessonBox'
+import LessonBox from '../../components/courses/LessonBox'
+import LessonMaterialList, {
+  LessonMovie,
+  LessonSlide,
+  // LessonFile,
+} from '../../components/courses/LessonMaterialList'
 
 const index: FC = () => (
   <Container className="mt-4">
@@ -12,10 +17,18 @@ const index: FC = () => (
     <Headline1>ワールドワイドウェブ発展</Headline1>
     <Headline2>お知らせ</Headline2>
     <ul>
-      <li>Webサイトを公開しました</li>
+      <li>第1回の資料を公開しました</li>
     </ul>
     <Headline2>講習会</Headline2>
-    <p>準備中です</p>
+    <LessonBox id={1} title="Webの実装パターンの歴史">
+      <LessonMaterialList>
+        <LessonMovie href="https://youtu.be/wC4RRcOeC0o">
+          YouTube Live 2021/07/17(土) 14:00-15:30
+        </LessonMovie>
+        <LessonSlide fileName="slide0.pdf">slide0.pdf</LessonSlide>
+        <LessonSlide fileName="slide1.pdf">slide1.pdf</LessonSlide>
+      </LessonMaterialList>
+    </LessonBox>
     <Headline2>シラバス</Headline2>
     <ol>
       <li>

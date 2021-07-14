@@ -14,6 +14,11 @@ const Headline2: FC<HeadlineProps> = props => {
   return <h2 className="text-secondary mt-4">{children}</h2>
 }
 
+const Headline3: FC<HeadlineProps> = props => {
+  const { children } = props
+  return <h3 className="text-dark mt-3">{children}</h3>
+}
+
 interface ExternalLinkProps {
   children: ReactNode
   href: string
@@ -28,4 +33,4 @@ const ExternalLink: FC<ExternalLinkProps> = props => {
   )
 }
 
-export { Headline1, Headline2, ExternalLink }
+export { Headline1, Headline2, Headline3, ExternalLink }

@@ -101,7 +101,7 @@ const nodenv: FC = () => (
     <pre>
       <code>
         $ nodenv versions
-        <br /> 14.16.0
+        <br /> 16.4.2
       </code>
     </pre>
     <Headline3>使用するnodeのバージョンを指定</Headline3>
@@ -109,11 +109,15 @@ const nodenv: FC = () => (
       <code>
         # グローバルで使うバージョンを指定
         <br />
-        $ nodenv global 14.16.0
+        $ nodenv global 16.4.2
         <br />
         <br />
         # カレントディレクトリ以下で使うバージョンを指定
-        <br />$ nodenv local 14.16.0
+        <br />$ nodenv local 16.4.2
+        <br />
+        <br />$ node --version
+        <br />
+        v16.4.2
       </code>
     </pre>
     <p>

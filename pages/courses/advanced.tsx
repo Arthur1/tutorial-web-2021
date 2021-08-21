@@ -21,6 +21,15 @@ const index: FC = () => (
       <li>第2回の資料を掲載しました</li>
     </ul>
     <Headline2>講習会</Headline2>
+    <LessonBox id={3} title="TypeScript">
+      <LessonMaterialList>
+        <LessonMovie href="https://youtu.be/FSckCEGP2wY">
+          YouTube Live 2021/08/22(日) 14:00-15:30
+        </LessonMovie>
+        <LessonSlide fileName="slide3.pdf">slide3.pdf</LessonSlide>
+        <LessonFile fileName="code3.zip">code3.zip</LessonFile>
+      </LessonMaterialList>
+    </LessonBox>
     <LessonBox id={2} title="Node.js">
       <LessonMaterialList>
         <LessonMovie href="https://youtu.be/Yclk3qaG2ns">

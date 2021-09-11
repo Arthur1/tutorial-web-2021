@@ -18,9 +18,21 @@ const index: FC = () => (
     <Headline1>ワールドワイドウェブ発展</Headline1>
     <Headline2>お知らせ</Headline2>
     <ul>
-      <li>第4回の資料を掲載しました</li>
+      <li>第5・6回の資料を掲載しました</li>
     </ul>
     <Headline2>講習会</Headline2>
+    <LessonBox id={6} title="React (2)">
+      <p>ペアプログラミング形式で行います。個別に日程調整をお願いします。</p>
+      <LessonMaterialList>
+        <LessonSlide fileName="slide6.pdf">slide6.pdf</LessonSlide>
+      </LessonMaterialList>
+    </LessonBox>
+    <LessonBox id={5} title="React (1)">
+      <p>ペアプログラミング形式で行います。個別に日程調整をお願いします。</p>
+      <LessonMaterialList>
+        <LessonSlide fileName="slide5.pdf">slide5.pdf</LessonSlide>
+      </LessonMaterialList>
+    </LessonBox>
     <LessonBox id={4} title="REST API">
       <LessonMaterialList>
         <LessonMovie href="https://youtu.be/zo_rVXrHUiI">
